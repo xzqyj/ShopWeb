@@ -9,6 +9,7 @@ public class User implements Serializable {
 	private String userName;	// 用户名
 	private String userPassword;	// 密码
 	private String userPhone;
+	private String userEmail;
 	private String userAddress;
 	public Integer getId() {
 		return id;
@@ -45,6 +46,13 @@ public class User implements Serializable {
 		return "User [id=" + id + ", userName=" + userName + ", userPassword=" + userPassword + ", userPhone="
 				+ userPhone + ", userAddress=" + userAddress + "]";
 	}
+	public String getUserEmail() {
+		return userEmail;
+	}
+	public void setUserEmail(String userEmail) {
+		this.userEmail = userEmail;
+	}
+	
 	
 	
 	
